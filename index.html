@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>テクノロジー（藤原）JavaScript練習用ページ</title>
+</head>
+
+<body>
+    <h1>テクノロジー（藤原）JavaScript練習用ページ</h1>
+
+    <!-- 外部ファイルのJavaScript（js/main.js）を読み込む -->
+    <script src="js/main.js"></script>
+
+    <!-- JavaScriptをHTMLに直接書く -->
+    <script>
+        // ここにJavaScriptコードを書く
+        console.log("おはよう！");
+        // window.alert("こんにちは！");
+    </script>
+
+    <!-- 以下は触らない（タブを閉じるときに警告を出すためのコード） -->
+    <script>
+    window.addEventListener('beforeunload', function(e) {
+        e.returnValue = 'タブを閉じるとConsoleのログが消えます。閉じたい場合はConsoleのログをコピーしておいてください。';
+    }, false);
+    </script>
+</body>
+
+</html>
